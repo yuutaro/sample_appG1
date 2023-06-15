@@ -38,6 +38,8 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+  host = 'yuutaro-vigilant-computing-machine-xv46v5vg7xx29qpr-3000.preview.app.github.dev'           # ここをコピペすると失敗します。自分の環境のホストに変えてください。
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   config.action_mailer.perform_caching = false
 
